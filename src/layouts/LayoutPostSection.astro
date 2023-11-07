@@ -1,0 +1,25 @@
+---
+const {titulo,posts,tituloboton} = Astro.props;
+
+
+import PostcardA from "../components/Postcard-A.astro";
+---
+
+<div class="w-full my-4">
+  <div class="flex flex-col justify-center items-center">
+    <p class="font-semibold mb-2 uppercase text-primary text-3xl">{titulo}</p>
+    <div class="w-full grid md:grid-cols-4 grid-cols-1">
+    {posts.map((post) => (
+        <PostcardA
+        imagen={post.imagen}
+        titulo={post.titulo}
+        autor={post.autor}
+        fecha={post.fecha}
+        descripcion={post.descripcion}
+        />
+    ))}
+    </div>
+    <button class="btn md:w-1/5 w-3/5 break-all text-center mt-3 btn-outline self-center btn-primary">{tituloboton ? tituloboton : "Ver más"}</button>
+  </div>
+</div>
+<div class="divider"></div>

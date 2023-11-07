@@ -1,9 +1,10 @@
 ---
 const pagetitle="Home"
-import Navbar from '../components/Navbar.astro'   
+import Navbar from '../components/Navbar.astro'
+import Footer from '../components/Footer.astro'
 ---
 <!DOCTYPE html>
-<html data-theme="dark" lang="en">
+<html data-theme="light" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,5 +17,6 @@ import Navbar from '../components/Navbar.astro'
        <slot/>
     </div>
     </div>
+    <Footer />
 </body>
 </html>
