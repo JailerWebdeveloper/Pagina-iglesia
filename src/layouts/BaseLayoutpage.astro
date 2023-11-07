@@ -1,0 +1,20 @@
+---
+const pagetitle="Home"
+import Navbar from '../components/Navbar.astro'   
+---
+<!DOCTYPE html>
+<html data-theme="dark" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{pagetitle}</title>
+</head>
+<body>
+    <div class="w-full flex justify-center">
+    <div class="w-4/5 md:p-4 flex flex-col  h-full">
+       <Navbar/> 
+       <slot/>
+    </div>
+    </div>
+</body>
+</html>

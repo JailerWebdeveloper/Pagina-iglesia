@@ -1,0 +1,56 @@
+---
+import {Instagram,Facebook,Twitter,Youtube,Search,Ribbon} from 'lucide-astro'
+
+---
+
+<header >
+  <div
+    class="container flex flex-wrap p-5 flex-col  gap-5 justify-center items-center"
+  >
+<div class="w-full flex flex-wrap items-center justify-center gap-5 md:justify-between">
+    <a
+        href="/"
+      class="flex title-font font-medium items-center"
+    >
+    <Ribbon class="text-blue-600" size="52px" />
+      <span class="ml-4  text-4xl">Casa santa</span>
+    </a>
+
+    <ul class="flex items-center justify-center gap-2 ">
+        <li><a class="hover:text-blue-600 hover:cursor-pointer transition duration-150 ease-in-out"><Instagram/></a></li>
+        <li><a class="hover:text-blue-600 hover:cursor-pointer transition duration-150 ease-in-out"><Facebook/></a></li>
+        <li><a class="hover:text-blue-600 hover:cursor-pointer transition duration-150 ease-in-out"><Twitter/></a></li>
+        <li><a class="hover:text-blue-600 hover:cursor-pointer transition duration-150 ease-in-out"><Youtube/></a></li>
+        <li><a class="hover:text-blue-600 hover:cursor-pointer transition duration-150 ease-in-out"><Search/></a></li>
+
+    </ul>
+
+</div>
+    <nav
+      class="md:flex hidden gap-4 font-bold font-flex-wrap uppercase text-center text-xs items-center my-2 justify-center"
+    >
+      <a class="hover:text-blue-600 hover:cursor-pointer transition duration-150 ease-in-out" >inicio</a>
+
+      <a class="hover:text-blue-600 hover:cursor-pointer transition duration-150 ease-in-out" >¿Quienes somos?</a>
+
+      <a class="hover:text-blue-600 hover:cursor-pointer transition duration-150 ease-in-out" >Enseñanzas</a>
+
+      <a class="hover:text-blue-600 hover:cursor-pointer transition duration-150 ease-in-out" >Noticias</a>
+
+      <a class="hover:text-blue-600 hover:cursor-pointer transition duration-150 ease-in-out" >Mujer</a>
+
+      <a class="hover:text-blue-600 hover:cursor-pointer transition duration-150 ease-in-out">Agenda</a>
+
+      <a class="hover:text-blue-600 hover:cursor-pointer transition duration-150 ease-in-out">Diezmos y ofrendas</a>
+
+      <a class="hover:text-blue-600 hover:cursor-pointer transition duration-150 ease-in-out">Testimonios</a>
+
+      <a class="hover:text-blue-600 hover:cursor-pointer transition duration-150 ease-in-out">Banco de alimentos</a>
+
+      <a class="hover:text-blue-600 hover:cursor-pointer transition duration-150 ease-in-out">Ministerio palabra y poder</a>
+
+      <a class="hover:text-blue-600 hover:cursor-pointer transition duration-150 ease-in-out">Contacto</a>
+
+    </nav>
+  </div>
+</header>
