@@ -3,7 +3,25 @@ import BaseLayoutpage from "../layouts/BaseLayoutpage.astro";
 import Carousel from "../components/Carousel.astro";
 import Hero from "../components/Hero.astro";
 import LayoutPostSection from "../layouts/LayoutPostSection.astro";
+import LayoutCardhover from "../layouts/LayoutCardhover.astro";
+import Map from "../components/Map.astro";
 const primerospost = [
+  {
+    imagen:
+      "https://i.pinimg.com/564x/5b/0c/3e/5b0c3e295ef3277afe0750907e66ecd8.jpg",
+    titulo: "Miauradas para pensar cagando de paublo cohelo",
+    autor: "Seneca de roma",
+    fecha: "16/2/1210",
+    descripcion: "el poder de la caja de arena",
+  },
+  {
+    imagen:
+      "https://i.pinimg.com/564x/5b/0c/3e/5b0c3e295ef3277afe0750907e66ecd8.jpg",
+    titulo: "Miauradas para pensar cagando de paublo cohelo",
+    autor: "Seneca de roma",
+    fecha: "16/2/1210",
+    descripcion: "el poder de la caja de arena",
+  },
   {
     imagen:
       "https://i.pinimg.com/564x/5b/0c/3e/5b0c3e295ef3277afe0750907e66ecd8.jpg",
@@ -60,5 +78,6 @@ const testimonios = [
     posts={testimonios}
     tituloboton="Ver mas Noticias"
   />
-  
+  <LayoutCardhover />
+  <Map />
 </BaseLayoutpage>
